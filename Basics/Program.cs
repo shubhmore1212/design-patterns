@@ -1,12 +1,6 @@
-﻿//Encapsulation
+﻿//Abstraction
 
-using Basics.Principles.Encapsulation;
+using Basics.Principles.Abstraction;
 
-BankAccount bankAccount = new BankAccount(100);
-Console.WriteLine(bankAccount.GetBalance());
-
-bankAccount.Deposit(50);
-
-bankAccount.Withdraw(180);
-
-Console.WriteLine(bankAccount.GetBalance());
+EmailService emailService = new EmailService();
+emailService.SendEmail();
